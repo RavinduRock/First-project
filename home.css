@@ -1,0 +1,332 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.main-button-img:hover{
+    transform: scale(1.1);
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+.main-button-img{
+    transition: scale 0.4s ease-in-out 0.2s, translate 0.4s ease-in-out 0.2s;
+}
+.logo{
+    display: flex;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: row;
+
+}
+.text{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: Roboto, Arial;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 0px;
+}
+.text:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.line{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+}
+.hero{
+    position: absolute;
+}
+.hero-shade{
+    position: absolute;
+    transition: opacity 0.4s ease-in-out;
+}
+.hero-shade:hover{
+    opacity: 0%;
+}
+.hero-text{
+    position: absolute;
+    font-family: 'Playfair Display';
+    font-size: 60px;
+    top: 20px;
+    right: 160px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px;
+    color: #FFFFFF;
+    text-shadow: 4px 8px 6.1px rgba(0, 0, 0, 0.25);
+}
+
+.hero-main-text{
+    position: absolute;
+    font-family: 'Playfair Display';
+    top: 0;
+    right: 90px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 171px;
+    color: #FFFFFF;
+    text-shadow: 15px 2px 7.5px rgba(0, 0, 0, 0.25);
+
+}
+.first-button{
+    position: absolute;
+    right: 160px;
+    top: 310px;
+    transition: transform 0.5s ease-in-out;
+}
+.first-button:hover{
+    transform: translateX(20px);
+    cursor: pointer;
+}
+.second{
+    position: relative;
+    margin-top: 900px;
+    display: block;
+}
+.elephant{
+    position: absolute;
+    right: 60px;
+    top: 0;
+    transition: translate 0.5s ease-in-out;
+
+}
+.elephant:hover{
+    transform: translateY(-20px);
+}
+.second-button{
+    position: absolute;
+    left: 60px;
+    top: 560px;
+    transition: scale 0.4s ease-in-out;
+}
+.second-button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.elephant-vector{
+    position: relative;
+    display: flex;
+    left: 60px;
+    top: 100px;
+}
+.second-para{
+    position: absolute;
+    top: -100px;
+    left: -50px;
+}
+.third{
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+}
+
+.third-text{
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    font-family: Playfair Display, Arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54.8283px;
+    line-height: 73px;
+}
+.next-third-text{
+    position: absolute;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 109.657px;
+    line-height: 146px;
+    text-align: center;
+    top: 80px;
+    left: 150px;
+}
+.third-para{
+    position: absolute;
+    top: 120px;
+    right: 60px;
+}
+.third-button{
+    top: 420px;
+    right: 140px;
+    position: absolute;
+    transition: scale 0.4s ease-in-out;
+}
+.third-button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.flamingo1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.flamingo3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.flamingo2{
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+}
+.fourth{
+    position: relative;
+    display: flex;
+}
+.fourth-text{
+    position: absolute;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 171px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 200px;
+
+}
+.next-fourth-text{
+    position: absolute;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+    top: 210px;
+    left: 200px;
+}
+.fourth-para{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+.nine-arch{
+    position: absolute;
+    top: 320px;
+    left: 680px;
+    transition: translateY 0.4s ease-in-out;
+}
+.nine-arch:hover{
+    transform: translateY(-20px);
+}
+.fifth{
+    position: relative;
+    display: flex;
+    height: 1000px;
+}
+.top-carving{
+    position: absolute;
+    top: 0;
+}
+.bottom-carving{
+    position: absolute;
+    bottom: 0px;
+}
+.fifth-main-text{
+    position: absolute;
+    top: 200px;
+    left: 120px;
+}
+.fifth-text{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+.footer{
+    position: relative;
+    display: flex;
+}
+.footer-image2{
+    position: absolute;
+    top: -10px;
+}
+.subscribe{
+    position: absolute;
+    top: 60px;
+    left: 350px;
+}
+.newsletter{
+    position: absolute;
+    width: 800px;
+    height: 60px;
+    left: 250px;
+    top: 190px;
+    background-image: url(assets/Rectangle\ 22.svg);
+    background: rgba(15, 0, 1, 0.1);
+    box-shadow: inset 37.4667px -37.4667px 37.4667px rgba(12, 1, 1, 0.1), inset -37.4667px 37.4667px 37.4667px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(37.4667px);
+    border: 0px;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 45px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    text-align: center;
+}
+.newsletter:hover{
+    background-color: rgba(174, 91, 241, 0.7);
+    
+}
+.newsletter::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.final-gradient{
+    position: absolute;
+    background-color: rgb(247, 58, 184);
+    top: 0;
+    left: 0;
+    width: 1435px;
+    bottom: 0;
+    z-index: -1;
+    transition: background-color 0.4s ease-in-out;
+}
+.footer-para{
+    bottom: 50px;
+    left: 100px;
+    position: absolute;
+}
+.footer-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 39px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFFCFC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer-para2{
+    bottom: 50px;
+    left: 600px;
+    position: absolute;
+}
