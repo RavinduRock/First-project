@@ -1,0 +1,33 @@
+.content{
+    position: fixed;
+}
+.plane{
+    top: 400px;
+    animation: loading 2s ease-in-out infinite, logo 2s ease-in-out infinite;
+    left: 550px;
+    position: absolute;
+}
+.logo{
+    top: 150px;
+    left: 450px;
+    position: absolute;
+    animation: logo 2s ease-in-out infinite;
+}
+@keyframes loading {
+    from{
+        transform: translate(0px,0px);
+        
+    }
+    to{
+        transform: translate(200px,-140px);
+    }
+}
+@keyframes logo {
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}

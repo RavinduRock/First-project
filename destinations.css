@@ -1,0 +1,405 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  animation: load 1s alternate;
+}
+@keyframes load{
+  from{
+      opacity: 0.5;
+      transform: translateY(100px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+.main-button-img:hover{
+  transform: scale(1.1);
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+.main-button-img{
+  transition: scale 0.4s ease-in-out 0.2s, translate 0.4s ease-in-out 0.2s;
+}
+.logo{
+  display: flex;
+}
+.nav{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  flex-direction: row;
+  animation: load 1s alternate;
+}
+.text{
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family: Roboto, Arial;
+  font-size: 20px;
+  transition: all .4s ease-in-out;
+  padding: 10px 10px 20px 10px;
+  margin-bottom: 0px;
+}
+.text:hover{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.line{
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  animation: load 1s alternate;
+}
+.hero{
+  display: flex;
+  width: 100%;
+  position: relative;
+  animation: load 1s alternate;
+}
+.hero-background{
+  position:absolute;
+  width: 100%;
+  top: 30px;
+  
+
+}
+.where{
+  position: relative;
+  top: 200px;
+  left: 70px;
+}
+.to{
+  position: relative;
+  top: 350px;
+  right: 135px;
+}
+.wording-background{
+  width: 37%;
+  position: relative;
+  top: 560px;
+  right: 400px;
+ 
+}
+.word-back{
+  position: absolute;
+  width: 35%;
+  top: 590px;
+  right: 405px;
+}
+.main{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.background-main{
+  position: absolute;
+  width: 100%;
+  top: 558px;
+  z-index: -1;
+  object-fit: cover;
+}
+.sri-lanka{
+  position: absolute;
+  font-family: 'roboto';
+  top: 600px;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  right: 500px;
+  
+}
+.colombo{
+  position: absolute;
+  top: 900px;
+  width: 35%;
+  left: 90px;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.colombo:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.anuradhapura{
+  position: absolute;
+  top: 900px;
+  left: 700px;
+  width: 35%;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.anuradhapura:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.nuwara-eliya{
+  position: absolute;
+  top: 1600px;
+  left: 90px;
+  width: 35%;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.nuwara-eliya:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.down-south{
+  position: absolute;
+  width: 35%;
+  left: 700px;
+  top: 1600px;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.down-south:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.kandy{
+  position: absolute;
+  width: 35%;
+  left: 90px;
+  top: 2300px;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.kandy:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.jaffna{
+  position: absolute;
+  width: 35%;
+  left: 700px;
+  top: 2300px;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.jaffna:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.other-destinations{
+  position: absolute;
+  font-family: 'roboto';
+  top: 3400px;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  right: 250px;
+  
+}
+.europe{
+  position: absolute;
+  width: 35%;
+  left: 90px;
+  top:3800px ;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.europe:hover{
+  transform: scale(1.1);
+}
+.singapore{
+  position: absolute;
+  width: 35%;
+  left: 700px;
+  top: 3800px;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.singapore:hover{
+  transform: scale(1.1);
+}
+.malaysia{
+  position: absolute;
+  left: 90px;
+  width: 35%;
+  top: 4400px;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.malaysia:hover{
+  transform: scale(1.1);
+}
+.india{
+  position: absolute;
+  left: 700px;
+  width: 35%;
+  top: 4400px;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.india:hover{
+  transform: scale(1.1);
+}
+.indonisia{
+  position: absolute;
+  left: 400px;
+  width: 35%;
+  top: 5000px;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.indonisia:hover{
+  transform: scale(1.1);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
+}
+.footer{
+    position: relative;
+    display: flex;
+    top: 6000px;
+}
+.footer-image2{
+    position: absolute;
+    top: -10px;
+    object-fit: cover;
+}
+.subscribe{
+    position: absolute;
+    top: 60px;
+    left: 350px;
+}
+.newsletter{
+    position: absolute;
+    width: 800px;
+    height: 60px;
+    left: 250px;
+    top: 190px;
+    background-image: url(assets/Rectangle\ 22.svg);
+    background: rgba(15, 0, 1, 0.1);
+    box-shadow: inset 37.4667px -37.4667px 37.4667px rgba(12, 1, 1, 0.1), inset -37.4667px 37.4667px 37.4667px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(37.4667px);
+    border: 0px;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 45px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    text-align: center;
+}
+.newsletter:hover{
+    background-color: rgba(174, 91, 241, 0.7);
+    
+}
+.newsletter::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.final-gradient{
+    position: absolute;
+    background-color: rgb(247, 58, 184);
+    top: 0;
+    left: 0;
+    width: 1435px;
+    bottom: 0;
+    z-index: -1;
+    transition: background-color 0.4s ease-in-out;
+}
+.footer-para{
+    bottom: 50px;
+    left: 100px;
+    position: absolute;
+}
+.footer-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 39px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFFCFC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer-para2{
+    bottom: 290px;
+    left: 600px;
+    position: absolute;
+}
+body{
+  padding-right: 0;
+  padding-bottom: 0;
+}
+#pre-load{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #FFFCFC;
+  display: flex;
+  top: 0px;
+}
+.plane{
+  top: 400px;
+  animation: loading 2s ease-in-out infinite, logo 2s ease-in-out infinite;
+  left: 550px;
+  position: absolute;
+}
+.pre-logo{
+  top: 150px;
+  left: 450px;
+  position: absolute;
+  animation: logo 2s ease-in-out infinite;
+}
+@keyframes loading {
+  from{
+      transform: translate(0px,0px);
+      
+  }
+  to{
+      transform: translate(200px,-140px);
+  }
+}
+@keyframes logo {
+  from{
+      opacity: 0.5;
+  }
+  to{
+      opacity: 1;
+  }
+  
+}
+@keyframes appear {
+  from{
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to{
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+#hidden{
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}

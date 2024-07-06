@@ -1,4 +1,4 @@
-heronow{
+.heronow{
     position: relative;
 }
 .pali-pic{
@@ -64,17 +64,26 @@ body{
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 8000px;
 }
 .first-title{
     position: absolute;
     top: 500px;
     left: 140px;
+    transform: translateY(0px);
+    transition: transform 0.4s ease-in-out;
+}
+.first-title:hover{
+    transform: translateY(-30px);
 }
 .first-para{
     position: absolute;
     top: 400px;
     left: 700px;
+    transform: translateY(0px);
+    transition: transform 0.4s ease-in-out;
+}
+.first-para:hover{
+    transform: translateY(-30px);
 }
 .second-section{
     position: relative;
@@ -83,27 +92,188 @@ body{
     position: absolute;
     top: 900px;
     left: 100px;
+    transform: translateY(0px);
+    transition: transform 0.4s ease-in-out;
+}
+.second-title:hover{
+    transform: translateY(-30px);
 }
 .second-para{
     position: absolute;
     top: 1130px;
     left: 100px;
     z-index: -1;
+    transform: translateY(0px);
+    transition: transform 0.4s ease-in-out;
+}
+.second-para:hover{
+    transform: translateY(-30px);
 }
 .pics{
     position: absolute;
     top: 900px;
     left: 700px;
+    transform: translateY(0px);
+    transition: transform 0.4s ease-in-out;
+}
+.pics:hover{
+    transform: translateY(-30px);
 }
 .footer{
     position: relative;
-}
-.footer-im{
-    position: absolute;
+    display: flex;
     top: 2000px;
+}
+.footer-image2{
+    position: absolute;
+    top: -10px;
+}
+.subscribe{
+    position: absolute;
+    top: 60px;
+    left: 350px;
+}
+.newsletter{
+    position: absolute;
+    width: 800px;
+    height: 60px;
+    left: 250px;
+    top: 190px;
+    background-image: url(assets/Rectangle\ 22.svg);
+    background: rgba(15, 0, 1, 0.1);
+    box-shadow: inset 37.4667px -37.4667px 37.4667px rgba(12, 1, 1, 0.1), inset -37.4667px 37.4667px 37.4667px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(37.4667px);
+    border: 0px;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 45px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    text-align: center;
+}
+.newsletter:hover{
+    background-color: rgba(174, 91, 241, 0.7);
+    
+}
+.newsletter::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.final-gradient{
+    position: absolute;
+    background-color: rgb(247, 58, 184);
+    top: 0;
+    left: 0;
+    width: 1435px;
+    bottom: 0;
+    z-index: -1;
+    transition: background-color 0.4s ease-in-out;
+}
+.footer-para{
+    bottom: 50px;
+    left: 100px;
+    position: absolute;
+}
+.footer-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 39px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFFCFC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer-para2{
+    bottom: 290px;
+    left: 600px;
+    position: absolute;
 }
 .back{
     background-color: black;
     opacity: 50%;
     top: 2000px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#hidden{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes load {
+    from{
+        opacity: 0.5;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+#load{
+    animation: load 1s alternate;
+}
+#pre-load{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #FFFCFC;
+    display: flex;
+    top: 0px;
+}
+.plane{
+    top: 400px;
+    animation: loading 2s ease-in-out infinite, logo 2s ease-in-out infinite;
+    left: 550px;
+    position: absolute;
+}
+.pre-logo{
+    top: 150px;
+    left: 450px;
+    position: absolute;
+    animation: logo 2s ease-in-out infinite;
+}
+@keyframes loading {
+    from{
+        transform: translate(0px,0px);
+        
+    }
+    to{
+        transform: translate(200px,-140px);
+    }
+}
+@keyframes logo {
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+    
 }
